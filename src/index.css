@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+}
+
+body > *{
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.app{
+  max-width: 300px;
+
+  border: #555 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Header */ 
+.header{
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 10px;
+  border: #555 2px groove;
+  border-radius: 35px;
+  padding: none;
+}
+
+
+/* Footer */
+.footer{
+  text-align: center;
+}
+
+/* Form */
+.addForm{
+  display: flex;
+}
+
+form input[type=text]{
+  height: 40px;
+  width: 100%;
+
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding: 12px 20px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+button[type=submit]{
+  height: 40px;
+  width: 40px;
+
+  margin-left: 1px;
+  border-radius: 20px;
+
+  background-color: white;
+}
+
+/* Tasks */
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Task Line is a Flex Container */
+li.taskLine{ 
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  margin: 10px;
+}
+
+
+li.taskLine label{
+  width: 92%;
+}
+
+/* checkbox */
+li.taskLine input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+
+li.taskLine input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+/* trash can */
+li.taskLine svg {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+li.taskLine svg:focus, 
+li.taskLine svg:hover {
+  color: red;
+  outline: none;
+}
