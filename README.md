@@ -3,6 +3,6 @@ After clone this repository
 - npm install 
 - npm start 
 
-Ch[Live web demo](https://todos-ten-omega.vercel.app/)
+Check out online: [Live web demo](https://todos-ten-omega.vercel.app/)
 
 
